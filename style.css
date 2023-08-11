@@ -76,15 +76,15 @@ body {
     top: 6rem;
     height: 30rem;
     width: 1200px;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
     background-color: #ffffff;
     box-shadow: 0 0 10px #ABB2B9;
     border-radius: 30px;
     opacity: 0;
-    transition: all 0.5 ease;
+    transition: all 1s ease;
 }
 
-.prodcut-hover-drop a:hover .prodcut-sub-menu {
+.prodcut-hover-drop:hover .prodcut-sub-menu {
     opacity: 1;
 }
 
