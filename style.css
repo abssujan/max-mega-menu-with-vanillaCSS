@@ -50,7 +50,7 @@ body {
     margin-right: 2rem;
     line-height: 2rem;
 }
-.li-list a {
+.li-list > a {
     display: flex;
     align-items: center;
     color: #3b4b64;
@@ -64,7 +64,7 @@ body {
     margin-right: 0.5rem;
     font-size: 13px;
 }
-.li-list a:hover{
+.li-list >  a:hover{
     color: #006aff;
 }
 /* product sub-menu */
@@ -74,20 +74,128 @@ body {
 .prodcut-sub-menu {
     position: absolute;
     top: 6rem;
-    height: 30rem;
+    height: 31rem;
     width: 1200px;
-    /* transform: translateX(-50%); */
     background-color: #ffffff;
     box-shadow: 0 0 10px #ABB2B9;
     border-radius: 30px;
     opacity: 0;
+    overflow: hidden;
     transition: all 1s ease;
+    transform: translateX(-200%);
 }
 
 .prodcut-hover-drop:hover .prodcut-sub-menu {
     opacity: 1;
+    transform: translateX(0);
+}
+/* product sub menu inner content */
+.product-sub-menu-flex-box {
+    display: flex;
+    height: 100%;
+    border-bottom-left-radius: 30px;
+}
+.discover-plugins-side {
+    padding: 40px 20px;
+}
+.get-help-side {
+    padding-top: 40px;
+    padding-right: 20px;
+}
+/* discover plugigns side start here */
+
+/* Heading text section */
+.box-heading {
+    padding: 0 1.2rem;
+    width: 80%;
+}
+.box-heading h2 {
+    color: #3b4b64;
+    font-size: 24px;
+}
+.box-heading p {
+    color: #566573;
+    line-height: 1.5rem;
+}
+/* soical-icons-grid-box */
+.soical-icons-grid-box{
+    margin-top: 2rem;
+    display:  grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    padding: 0 1.2rem;
+}
+/* social icons content box flex items */
+.content-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.content-box h4 {
+    line-height: 1.1rem;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 600;
+    white-space: pre-wrap;
+    cursor: pointer;
+    color: #566573;
+}
+.content-box-mt {
+    margin-top: 0.5rem;
+}
+.content-box:hover {
+    background-color: #EAECEE;
 }
 
+.content-box:hover h4 {
+    color: #006aff;
+}
+/* content box image icon with width and height  */
+.icon-image {
+    width: 45px;
+    height: 45px;
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+}
+.icon-image img {
+    width: 100%;
+    height: 100%;
+}
+/* get help site */
+.get-help-side {
+    background-color: #f4f7fc;
+    padding-top: 5rem;
+    padding-right: 5rem;
+    padding-left: 2rem;
+}
+.get-help-side h4{
+    font-size: 20px;
+    color: #3b4b64;
+}
+.get-help-side p {
+    line-height: 1.5rem;
+    color: #566573;
+    font-size: 16px;
+}
+.get-help-side a{
+    margin-top: 10px;
+    font-weight: 700;
+    color: #006aff;
+}
+.get-help-image {
+    margin-top: 0.5rem;
+    width: 360px;
+    height: fit-content;
+    border-radius: 5px;
+}
+.get-help-image img {
+    width: 100%;
+    height: 100%;
+}
 /* responsive version */
 /* Desktops, large screens */
 @media only screen and (max-width: 1350px) {
